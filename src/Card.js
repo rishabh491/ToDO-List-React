@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 
 function Card({todos,setTodos,task,setTask}) {
-  const [isEdit,setIsEdit]=useState(false);
+
   const[edit,setEdit]=useState(false)
   function handleEdit(a){
     setTask(a);
     setEdit(true);
-    setIsEdit(!isEdit);
   }
 
   function handleSave(id) {
